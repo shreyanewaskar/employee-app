@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies"
+
+  build:
+    commands:
+      - echo "Building project"
+      - ls
+
+artifacts:
+  files:
+    - '**/*'
+  name: employee-app-build-$(date +%Y-%m-%d)
